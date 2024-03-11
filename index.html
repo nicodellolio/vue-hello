@@ -7,10 +7,14 @@
     <title>Hello Vue!</title>
     <style>
         #app{
-            height: 100vh;
             text-align: center;
+            margin-top: 25vh;
             h1{
-                margin-top: 50vh;
+                border-bottom: 5px solid black;
+                width: 50%;
+                padding: 2rem;
+                margin: 0 auto 5rem ;
+                color: orange;
             }
         }
     </style>
@@ -21,6 +25,7 @@
 
     <div id="app">
         <h1>{{ message }}</h1>
+        <img v-bind:src="localImg" alt="meme">
     </div>
 
     <script>
@@ -30,6 +35,7 @@
             data() {
                 return {
                     message: 'Hello Boolean! I am using VueJS! ',
+                    localImg: './assets/3c85feecb4eb52a4d69ef0891cfbc495a1da7174.jpeg'
                 }
             }
         }).mount('#app')
