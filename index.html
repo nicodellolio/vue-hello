@@ -21,25 +21,14 @@
 </head>
 
 <body>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+    
     <div id="app">
         <h1>{{ message }}</h1>
         <img v-bind:src="localImg" alt="meme">
     </div>
 
-    <script>
-        const { createApp } = Vue
-
-        createApp({
-            data() {
-                return {
-                    message: 'Hello Boolean! I am using VueJS! ',
-                    localImg: './assets/3c85feecb4eb52a4d69ef0891cfbc495a1da7174.jpeg'
-                }
-            }
-        }).mount('#app')
-    </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
